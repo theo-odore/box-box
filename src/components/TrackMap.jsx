@@ -12,6 +12,7 @@ const TrackMap = () => {
   const {
     meta,
     activeChunkData,
+    nextChunkData,
     currentTime,
     selectedDriver,
     setSelectedDriver,
@@ -148,8 +149,15 @@ const TrackMap = () => {
     // 3. Driver dot computation
     const driverDots = [];
 
-    if (activeChunkData?.drivers) {
-      const { timestamps, drivers } = activeChunkData;
+    let useChunk = activeChunkData;
+    if (activeChunkData?.timestamps && currentTime > activeChunkData.timestamps[activeChunkData.timestamps.length - 1] && nextChunkData?.timestamps) {
+      if (currentTime <= nextChunkData.timestamps[nextChunkData.timestamps.length - 1]) {
+        useChunk = nextChunkData;
+      }
+    }
+
+    if (useChunk?.drivers) {
+      const { timestamps, drivers } = useChunk;
 
       // Binary search for current frame index
       let lo = 0, hi = timestamps.length - 2, idx = -1;
@@ -161,6 +169,16 @@ const TrackMap = () => {
           lo = mid + 1;
         } else {
           hi = mid - 1;
+        }
+      }
+
+      // Double-buffering clamping: if we slightly overshot or undershot, clamp to ends 
+      // instead of dropping dots (prevents flicker on boundaries/network lag).
+      if (idx === -1 && timestamps.length > 0) {
+        if (currentTime >= timestamps[timestamps.length - 1]) {
+          idx = timestamps.length - 2;
+        } else if (currentTime <= timestamps[0]) {
+          idx = 0;
         }
       }
 
@@ -248,38 +266,60 @@ const TrackMap = () => {
       }
     }
 
-    // 4. Proximity label suppression
-    // For each dot, decide if its label should be shown.
-    // Rules:
-    //   - alwaysShowLabel drivers (selected, compare, leader) NEVER have their
-    //     label suppressed.
-    //   - A regular dot's label IS suppressed if it is within LABEL_SUPPRESS_PX
-    //     of ANY other dot (including an alwaysShowLabel one, which is often in
-    //     the middle of a cluster).
-    const showLabel = new Array(driverDots.length).fill(true);
-    for (let i = 0; i < driverDots.length; i++) {
-      if (driverDots[i].alwaysShowLabel) continue; // protected — never suppress
-      for (let j = 0; j < driverDots.length; j++) {
-        if (i === j) continue;
-        const dx = driverDots[i].x - driverDots[j].x;
-        const dy = driverDots[i].y - driverDots[j].y;
-        if (Math.hypot(dx, dy) < LABEL_SUPPRESS_PX) {
-          showLabel[i] = false;
-          break; // already suppressed, no need to check more
+    // 4. Proximity label suppression & collision logic
+    // Cluster dots that are close together
+    const clusters = [];
+    driverDots.forEach(dot => {
+      let added = false;
+      for (const cluster of clusters) {
+        if (cluster.some(cDot => Math.hypot(dot.x - cDot.x, dot.y - cDot.y) < LABEL_SUPPRESS_PX)) {
+          cluster.push(dot);
+          added = true;
+          break;
         }
       }
-    }
+      if (!added) {
+        clusters.push([dot]);
+      }
+    });
+
+    clusters.forEach(cluster => {
+      cluster.sort((a, b) => a.y - b.y); // sort vertically for offset stacking
+      
+      if (cluster.length <= 3) {
+        // Offset vertically
+        cluster.forEach((d, i) => {
+          d.showLabel = true;
+          d.labelOffsetY = (i - (cluster.length - 1) / 2) * 12;
+        });
+      } else {
+        // Group into +N
+        const mandatory = cluster.filter(d => d.alwaysShowLabel);
+        const others = cluster.filter(d => !d.alwaysShowLabel);
+        if (mandatory.length === 0 && others.length > 0) {
+          mandatory.push(others.shift());
+        }
+        mandatory.forEach((d, i) => {
+          d.showLabel = true;
+          d.labelOffsetY = (i - (mandatory.length - 1) / 2) * 12;
+        });
+        others.forEach(d => {
+          d.showLabel = false;
+        });
+        cluster.plusN = others.length;
+        cluster.cx = cluster.reduce((sum, d) => sum + d.x, 0) / cluster.length;
+        cluster.cy = cluster.reduce((sum, d) => sum + d.y, 0) / cluster.length;
+      }
+    });
 
     // 5. Draw dots (selected/hovered on top)
-    const sortedDots = driverDots
-      .map((dot, i) => ({ ...dot, showLabel: showLabel[i] }))
-      .sort((a, b) => {
-        if (a.isSelected) return 1;
-        if (b.isSelected) return -1;
-        if (a.isHovered)  return 1;
-        if (b.isHovered)  return -1;
-        return 0;
-      });
+    const sortedDots = [...driverDots].sort((a, b) => {
+      if (a.isSelected) return 1;
+      if (b.isSelected) return -1;
+      if (a.isHovered)  return 1;
+      if (b.isHovered)  return -1;
+      return 0;
+    });
 
     sortedDots.forEach(dot => {
       const radius = dot.isSelected ? 8 : 6;
@@ -300,14 +340,27 @@ const TrackMap = () => {
         ctx.font         = dot.isSelected ? 'bold 10px var(--font-sans)' : '9px var(--font-sans)';
         ctx.textAlign    = 'left';
         ctx.textBaseline = 'middle';
-        ctx.fillText(dot.driver, dot.x + radius + 3, dot.y - (dot.isSelected ? 2 : 1));
+        const offsetY = dot.labelOffsetY || 0;
+        ctx.fillText(dot.driver, dot.x + radius + 3, dot.y + offsetY - (dot.isSelected ? 2 : 1));
       } else {
-        // Tiny proximity indicator: small white rim dot
+        // Tiny proximity indicator
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, radius + 2.5, 0, Math.PI * 2);
         ctx.strokeStyle = 'rgba(255,255,255,0.25)';
         ctx.lineWidth   = 1;
         ctx.stroke();
+      }
+    });
+
+    // Draw +N indicators for large clusters
+    clusters.forEach(cluster => {
+      if (cluster.plusN > 0) {
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        ctx.font = 'bold 9px var(--font-sans)';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        // Draw +N slightly below the centroid
+        ctx.fillText(`+${cluster.plusN}`, cluster.cx, cluster.cy + 12);
       }
     });
 
