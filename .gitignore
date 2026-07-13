@@ -25,3 +25,8 @@ dist-ssr
 
 # Cache
 .fastf1_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
