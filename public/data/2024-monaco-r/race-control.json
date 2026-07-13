@@ -1,0 +1,592 @@
+[
+  {
+    "time": -2400.0,
+    "category": "Flag",
+    "message": "GREEN LIGHT - PIT EXIT OPEN"
+  },
+  {
+    "time": -1800.0,
+    "category": "Other",
+    "message": "PIT EXIT CLOSED"
+  },
+  {
+    "time": -1735.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 7"
+  },
+  {
+    "time": -1706.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 7"
+  },
+  {
+    "time": -1074.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 12"
+  },
+  {
+    "time": -1019.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 12"
+  },
+  {
+    "time": -888.0,
+    "category": "Other",
+    "message": "RISK OF RAIN FOR F1 RACE IS 0%"
+  },
+  {
+    "time": -174.0,
+    "category": "Drs",
+    "message": "DRS DISABLED"
+  },
+  {
+    "time": 191.0,
+    "category": "Flag",
+    "message": "GREEN LIGHT - PIT EXIT OPEN"
+  },
+  {
+    "time": 216.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 3"
+  },
+  {
+    "time": 218.0,
+    "category": "Flag",
+    "message": "YELLOW IN TRACK SECTOR 6"
+  },
+  {
+    "time": 219.0,
+    "category": "Flag",
+    "message": "YELLOW IN TRACK SECTOR 4"
+  },
+  {
+    "time": 219.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 4"
+  },
+  {
+    "time": 224.0,
+    "category": "Flag",
+    "message": "YELLOW IN TRACK SECTOR 5"
+  },
+  {
+    "time": 235.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 6"
+  },
+  {
+    "time": 237.0,
+    "category": "Flag",
+    "message": "YELLOW IN TRACK SECTOR 6"
+  },
+  {
+    "time": 241.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 5"
+  },
+  {
+    "time": 242.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 6"
+  },
+  {
+    "time": 243.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 10"
+  },
+  {
+    "time": 244.0,
+    "category": "Flag",
+    "message": "YELLOW IN TRACK SECTOR 9"
+  },
+  {
+    "time": 245.0,
+    "category": "Flag",
+    "message": "YELLOW IN TRACK SECTOR 11"
+  },
+  {
+    "time": 245.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 10"
+  },
+  {
+    "time": 248.0,
+    "category": "Flag",
+    "message": "RED FLAG"
+  },
+  {
+    "time": 248.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 3"
+  },
+  {
+    "time": 248.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 4"
+  },
+  {
+    "time": 248.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 9"
+  },
+  {
+    "time": 248.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 11"
+  },
+  {
+    "time": 867.0,
+    "category": "Other",
+    "message": "LAP 1 TURN 1 INCIDENT NOTED"
+  },
+  {
+    "time": 899.0,
+    "category": "Other",
+    "message": "TURN 8 INCIDENT INVOLVING CARS 10 (GAS) AND 31 (OCO) NOTED - CAUSING A COLLISION"
+  },
+  {
+    "time": 1307.0,
+    "category": "Other",
+    "message": "ORDER FOR RESTART: 16, 81, 55, 4, 63, 1, 44, 22, 23, 10, 31, 18, 3, 14, 2, 77, 24"
+  },
+  {
+    "time": 1358.0,
+    "category": "Other",
+    "message": "FIA STEWARDS: LAP 1 TURN 1 INCIDENT REVIEWED NO FURTHER INVESTIGATION"
+  },
+  {
+    "time": 1772.0,
+    "category": "Other",
+    "message": "RACE WILL RESUME AT 15:44"
+  },
+  {
+    "time": 2096.0,
+    "category": "Other",
+    "message": "FIA STEWARDS: TURN 8 INCIDENT INVOLVING CARS 10 (GAS) AND 31 (OCO) UNDER INVESTIGATION - CAUSING A COLLISION"
+  },
+  {
+    "time": 2144.0,
+    "category": "Flag",
+    "message": "TRACK CLEAR"
+  },
+  {
+    "time": 2187.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 13"
+  },
+  {
+    "time": 2212.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 13"
+  },
+  {
+    "time": 2303.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 3"
+  },
+  {
+    "time": 2367.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 3"
+  },
+  {
+    "time": 2521.0,
+    "category": "Other",
+    "message": "RACE WILL RESUME AT 15:44 - STANDING START PROCEDURE"
+  },
+  {
+    "time": 2625.0,
+    "category": "Other",
+    "message": "ALL CARS MAY OVERTAKE THE SAFETY CAR"
+  },
+  {
+    "time": 2693.0,
+    "category": "Other",
+    "message": "STANDING START"
+  },
+  {
+    "time": 2923.0,
+    "category": "Drs",
+    "message": "DRS ENABLED"
+  },
+  {
+    "time": 3103.0,
+    "category": "Other",
+    "message": "LAP 1 INCIDENT INVOLVING CARS 55 (SAI) AND 81 (PIA) NOTED - CAUSING A COLLISION"
+  },
+  {
+    "time": 3255.0,
+    "category": "Other",
+    "message": "FIA STEWARDS: 10 SECOND TIME PENALTY FOR CAR 31 (OCO) - CAUSING A COLLISION"
+  },
+  {
+    "time": 3406.0,
+    "category": "Other",
+    "message": "FIA STEWARDS: LAP 1 INCIDENT INVOLVING CARS 55 (SAI) AND 81 (PIA) REVIEWED NO FURTHER INVESTIGATION - CAUSING A COLLISION"
+  },
+  {
+    "time": 4241.0,
+    "category": "Other",
+    "message": "CAR 77 (BOT) TIME 1:17.829 DELETED - TRACK LIMITS AT TURN 10 LAP 19 16:10:02"
+  },
+  {
+    "time": 5847.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 77 (BOT) TIMED AT 16:37:27"
+  },
+  {
+    "time": 5858.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 77 (BOT) TIMED AT 16:37:37"
+  },
+  {
+    "time": 5866.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 77 (BOT) TIMED AT 16:37:45"
+  },
+  {
+    "time": 5903.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:38:22"
+  },
+  {
+    "time": 5909.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:38:29"
+  },
+  {
+    "time": 5916.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:38:35"
+  },
+  {
+    "time": 5929.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:38:48"
+  },
+  {
+    "time": 5935.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 3 (RIC) TIMED AT 16:38:54"
+  },
+  {
+    "time": 5936.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:38:56"
+  },
+  {
+    "time": 5972.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 14 (ALO) TIMED AT 16:39:32"
+  },
+  {
+    "time": 5976.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 3 (RIC) TIMED AT 16:39:35"
+  },
+  {
+    "time": 5997.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 14 (ALO) TIMED AT 16:39:57"
+  },
+  {
+    "time": 6098.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 18 (STR) TIMED AT 16:41:37"
+  },
+  {
+    "time": 6541.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:49:00"
+  },
+  {
+    "time": 6555.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:49:14"
+  },
+  {
+    "time": 6569.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:49:29"
+  },
+  {
+    "time": 6573.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 77 (BOT) TIMED AT 16:49:32"
+  },
+  {
+    "time": 6577.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:49:37"
+  },
+  {
+    "time": 6584.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:49:43"
+  },
+  {
+    "time": 6599.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:49:59"
+  },
+  {
+    "time": 6608.0,
+    "category": "Other",
+    "message": "CAR 18 (STR) TIME 1:49.132 DELETED - TRACK LIMITS AT TURN 16 LAP 48 16:49:14"
+  },
+  {
+    "time": 6696.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 10 (GAS) TIMED AT 16:51:35"
+  },
+  {
+    "time": 6721.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 10 (GAS) TIMED AT 16:52:00"
+  },
+  {
+    "time": 6743.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 10 (GAS) TIMED AT 16:52:22"
+  },
+  {
+    "time": 6786.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 3 (RIC) TIMED AT 16:53:05"
+  },
+  {
+    "time": 6812.0,
+    "category": "Flag",
+    "message": "DOUBLE YELLOW IN TRACK SECTOR 13"
+  },
+  {
+    "time": 6813.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 14 (ALO) TIMED AT 16:53:32"
+  },
+  {
+    "time": 6816.0,
+    "category": "Flag",
+    "message": "CLEAR IN TRACK SECTOR 13"
+  },
+  {
+    "time": 6933.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 18 (STR) TIMED AT 16:55:33"
+  },
+  {
+    "time": 6934.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 23 (ALB) TIMED AT 16:55:33"
+  },
+  {
+    "time": 6955.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:55:54"
+  },
+  {
+    "time": 6959.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 23 (ALB) TIMED AT 16:55:58"
+  },
+  {
+    "time": 6961.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:56:00"
+  },
+  {
+    "time": 6966.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 18 (STR) TIMED AT 16:56:05"
+  },
+  {
+    "time": 6983.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 16:56:23"
+  },
+  {
+    "time": 6995.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 22 (TSU) TIMED AT 16:56:34"
+  },
+  {
+    "time": 6995.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 16:56:35"
+  },
+  {
+    "time": 7002.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 22 (TSU) TIMED AT 16:56:42"
+  },
+  {
+    "time": 7011.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 22 (TSU) TIMED AT 16:56:50"
+  },
+  {
+    "time": 7127.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 77 (BOT) TIMED AT 16:58:46"
+  },
+  {
+    "time": 7143.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 3 (RIC) TIMED AT 16:59:03"
+  },
+  {
+    "time": 7155.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 14 (ALO) TIMED AT 16:59:14"
+  },
+  {
+    "time": 7198.0,
+    "category": "Other",
+    "message": "CAR 14 (ALO) TIME 1:23.377 DELETED - TRACK LIMITS AT TURN 10 LAP 52 16:54:24"
+  },
+  {
+    "time": 7208.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 3 (RIC) TIMED AT 17:00:07"
+  },
+  {
+    "time": 7229.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 14 (ALO) TIMED AT 17:00:29"
+  },
+  {
+    "time": 7296.0,
+    "category": "Other",
+    "message": "CAR 44 (HAM) TIME 1:16.855 DELETED - TRACK LIMITS AT TURN 10 LAP 58 17:01:04"
+  },
+  {
+    "time": 7383.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 10 (GAS) TIMED AT 17:03:02"
+  },
+  {
+    "time": 7418.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 10 (GAS) TIMED AT 17:03:38"
+  },
+  {
+    "time": 7523.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 10 (GAS) TIMED AT 17:05:23"
+  },
+  {
+    "time": 7651.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 23 (ALB) TIMED AT 17:07:30"
+  },
+  {
+    "time": 7669.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 22 (TSU) TIMED AT 17:07:49"
+  },
+  {
+    "time": 7693.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 23 (ALB) TIMED AT 17:08:12"
+  },
+  {
+    "time": 7708.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 22 (TSU) TIMED AT 17:08:28"
+  },
+  {
+    "time": 8010.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 17:13:29"
+  },
+  {
+    "time": 8019.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 17:13:39"
+  },
+  {
+    "time": 8028.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:13:48"
+  },
+  {
+    "time": 8085.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 17:14:44"
+  },
+  {
+    "time": 8103.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:15:02"
+  },
+  {
+    "time": 8104.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 17:15:03"
+  },
+  {
+    "time": 8110.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 2 (SAR) TIMED AT 17:15:10"
+  },
+  {
+    "time": 8119.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:15:18"
+  },
+  {
+    "time": 8303.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:18:22"
+  },
+  {
+    "time": 8319.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:18:39"
+  },
+  {
+    "time": 8378.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:19:37"
+  },
+  {
+    "time": 8416.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 24 (ZHO) TIMED AT 17:20:15"
+  },
+  {
+    "time": 8496.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 18 (STR) TIMED AT 17:21:35"
+  },
+  {
+    "time": 8528.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 77 (BOT) TIMED AT 17:22:08"
+  },
+  {
+    "time": 8563.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 3 (RIC) TIMED AT 17:22:42"
+  },
+  {
+    "time": 8591.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 14 (ALO) TIMED AT 17:23:10"
+  },
+  {
+    "time": 8786.0,
+    "category": "Flag",
+    "message": "CHEQUERED FLAG"
+  },
+  {
+    "time": 8790.0,
+    "category": "Flag",
+    "message": "WAVED BLUE FLAG FOR CAR 18 (STR) TIMED AT 17:26:30"
+  },
+  {
+    "time": 8807.0,
+    "category": "Other",
+    "message": "CAR 4 (NOR) TIME 1:17.296 DELETED - TRACK LIMITS AT TURN 10 LAP 78 17:26:06"
+  }
+]

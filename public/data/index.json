@@ -1,0 +1,24 @@
+[
+  {
+    "id": "2024-monaco-r",
+    "year": 2024,
+    "event": "Monaco Grand Prix",
+    "country": "Monaco",
+    "countryCode": "mc",
+    "session": "Race",
+    "date": "2024-05-26",
+    "circuit": "FORMULA 1 GRAND PRIX DE MONACO 2024",
+    "totalLaps": 78
+  },
+  {
+    "id": "2024-monza-r",
+    "year": 2024,
+    "event": "Italian Grand Prix",
+    "country": "Italy",
+    "countryCode": "it",
+    "session": "Race",
+    "date": "2024-09-01",
+    "circuit": "FORMULA 1 PIRELLI GRAN PREMIO D\u2019ITALIA 2024",
+    "totalLaps": 53
+  }
+]
